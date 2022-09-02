@@ -1,17 +1,17 @@
-# # 웹 채팅을 위한 API 기능들
+# 웹 채팅을 위한 API 기능들
 
 ### 디렉토리 구조 및 설명
 ```bash
-├── common  # 공통으로 쓰이는 함수 모음
+├── libs  # 공통으로 쓰이는 함수 모음
 │   ├── __init__.py
 │   └── lib.py  # 자주 쓰이는 함수들
-├── core  # API 기능을 위한 공통 환경 변수들
+├── configs  # API 기능을 위한 공통 환경 변수들
 │   ├── __init__.py
 │   └── config.py  # 환경변수
-├── db
+├── databases
 │   ├── models
 │   │   ├── __init__.py
-│   │   └── table_model.py  # 실제 데이터베이스에 존재하는 테이블 스키마
+│   │   └── table_models.py  # 실제 데이터베이스에 존재하는 테이블 스키마
 │   ├── __init__.py
 │   ├── connection.py  # 데이터베이스 세션 호출 시작 및 닫는 역할
 │   └── session.py  # 데이터베이스 세션 생성
@@ -32,4 +32,5 @@
 │   └── user.py  # 사용자 관련 pydantic 스키마들
 ├── __init__.pt
 └── main.py  # API 실행 시작 부분
+
 ``` 
